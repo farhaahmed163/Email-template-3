@@ -49,6 +49,34 @@
             border: 2px solid green;
             border-bottom-right-radius: 10px;
         }
+
+        .book .container .row {
+            flex-direction: row;
+        }
+
+        /* media query */
+        @media only screen and (max-width: 767px) {
+
+            .book .container .row {
+                flex-direction: column;
+            }
+
+            .book .container .row .text {
+                width: 100%;
+            }
+
+            .book .container .row .image {
+                width: 100%;
+            }
+
+            .main .logo {
+                width: 150px;
+            }
+
+            .main-table .container .row .logo img {
+                width: 100px;
+            }
+        }
     </style>
 </head>
 
@@ -73,7 +101,7 @@
         <h2 class="text-center py-5">Learning with YIP vs Learning on an App </h2>
         <div class="container d-flex flex-column justify-content-center">
             <div class="row first gap-5 w-100 p-3 d-flex justify-content-center">
-                <div class="col-5 text-center"><img src="./images/logo.png" alt=""></div>
+                <div class="col-5 text-center logo"><img src="./images/logo.png" alt=""></div>
                 <div class="col-5 text-center d-flex justify-content-center align-items-center"
                     style="font-size: 30px;color: #5B5B5B; ">
                     <p class="m-0 gray fw-bold"> Language App</p>
@@ -117,37 +145,6 @@
 
                 </div>
             </div>
-            <!-- <table class="table">
-                <thead>
-                    <tr>
-                        <th class="text-center"><img src="./images/logo.png" alt="">
-                        </th>
-                        <th style="font-size: 30px;color: #5B5B5B;">Language App
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="purple">Customised Learning</td>
-                        <td class="gray">Limited Personalisation</td>
-                    </tr>
-
-                    <tr>
-                        <td class="purple">Immediate Feedback</td>
-                        <td class="gray">Limited Feedback and corrections</td>
-                    </tr>
-
-                    <tr>
-                        <td class="purple">Conversation Practise</td>
-                        <td class="gray">Lack of speaking practice </td>
-                    </tr>
-
-                    <tr>
-                        <td class="purple">Motivation and Accountability</td>
-                        <td class="gray">Lack of Motivation and Accountability</td>
-                    </tr>
-                </tbody>
-            </table> -->
         </div>
 
 
@@ -173,7 +170,7 @@
     <section class="book">
         <div class="container">
             <div class="row p-3 d-flex justify-content-center align-items-center p-4">
-                <div class="col-8">
+                <div class="col-8 text">
                     <p class="text-center fw-bold m-0">Explore a diverse range of language professors or let us assist
                         in<br>
                         finding
@@ -181,7 +178,7 @@
                         Our platform ensures personalised<br> guidance to match you with an instructor aligned with your
                         learning<br> preferences and goals .</p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 image">
                     <img src="./images/book icon.png" alt="">
                 </div>
             </div>
