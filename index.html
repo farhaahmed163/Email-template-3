@@ -16,6 +16,10 @@
             flex-direction: row;
         }
 
+        .footer .logo img {
+            width: 150px;
+        }
+
         .right-bord {
             border-right: 1px solid #E3E3E3;
             padding: 10px;
@@ -76,6 +80,10 @@
         @media only screen and (max-width: 767px) {
             .footer .follow-us {
                 flex-direction: column;
+            }
+
+            .footer .logo img {
+                width: 110px;
             }
 
             .gray {
@@ -251,7 +259,7 @@
 
     </section>
     <section class="footer" style="height: 200px; background-color: #74007B;padding: 30px;">
-        <div><img src="./images/Footer-logo.png" alt="" width="150px"></div>
+        <div class="logo"><img src="./images/Footer-logo.png" alt="footer-logo"></div>
         <div class="follow-us my-4 d-flex  gap-4">
             <h2 class="fw-bolder m-0" style="color: #fff; font-weight: 800;">Follow Us!</h2>
             <ul class="list-unstyled d-flex flex-row gap-2 align-items-center m-0">
